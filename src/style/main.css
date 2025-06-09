@@ -15,6 +15,7 @@ html,body{
     align-items:center;
     position:relative;
     z-index:2;
+    pointer-events: none;
 }
 #menu-box.active > #menu-spacer {
     flex: 1;
@@ -23,7 +24,7 @@ html,body{
 #menu-spacer {
     flex: 0;
     transition-property: flex;
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
 }
 
 #menu-container {
@@ -37,17 +38,12 @@ html,body{
     height:15vw;
     min-width: 100px;
     min-height: 100px;
-    
-    rotate: 45deg;
+    pointer-events: all;
 }
 
 .rotator {
     transition-duration: 0.5s;
     transition-property: rotate;
-}
-
-.counter-rotate {
-    rotate: -45deg;
 }
 
 .menu-item {
@@ -101,4 +97,17 @@ html,body{
 #menu-container > ul > li:nth-child(4) {
     border-top-style: solid;
     border-left-style: solid;
+}
+
+#main-one {
+    position: absolute;
+    top: 0 ;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
 }
