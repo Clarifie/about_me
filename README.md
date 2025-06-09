@@ -2,6 +2,7 @@
 ## Example designs
 ### Menu
 ![Main menu design, 2 out of 4 logos made inside of a rounded square](designs/CiteDesign2_Initial.png)
+
 ![Main menu design dark mode, same as above](designs/CiteDesign2_Page.png)
 
 ### Text
